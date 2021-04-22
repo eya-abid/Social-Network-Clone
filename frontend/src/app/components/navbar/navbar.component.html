@@ -7,7 +7,11 @@
 <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
       <form class="d-flex">
-        <button class="btn btn-outline-success" type="submit">sign in</button>
+        <button class="btn btn-outline-success" 
+        type="submit" [routerLink]="['/signin']" 
+        routerLinkActive="router-link-active" >sign in</button>
+        <button class="btn btn-outline-success" type="submit" [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</button>
+        <button class="btn btn-outline-success" type="submit" [routerLink]="['/profile']" routerLinkActive="router-link-active" >Profile</button>
       </form>
     </div>
   </nav>
